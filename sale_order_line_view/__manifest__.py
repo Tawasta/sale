@@ -23,7 +23,7 @@
     'name': 'Sale order line view',
     'summary': 'Add a readonly SO line view for viewing SO line spesific info',
     'category': 'Sale',
-    'version': '10.0.1.0.1',
+    'version': '10.0.1.0.2',
     'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',

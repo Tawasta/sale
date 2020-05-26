@@ -7,18 +7,18 @@
         <field name="arch" type="xml">
             <tree string="Sales Order Lines" create="false" delete="false">
                 <field name="order_id"/>
+                <field name="layout_category_id" groups="sale.group_sale_layout"/>
                 <field name="product_id" />
                 <field name="order_partner_id"/>
                 <field name="name"/>
                 <field name="state"/>
                 <field name="date_order"/>
                 <field name="product_uom_qty" string="Qty"/>
-                <field name="qty_delivered"/>
                 <field name="qty_invoiced"/>
                 <field name="qty_to_invoice"/>
                 <field name="product_uom" string="Unit of Measure" groups="product.group_uom"/>
                 <field name="price_subtotal" sum="Total" widget="monetary"/>
-		<field name="margin_percent"/>
+		        <field name="margin_percent"/>
             </tree>
         </field>
     </record>
