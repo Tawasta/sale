@@ -10,7 +10,7 @@ class SaleOrder(models.Model):
     def action_confirm(self):
         for sale in self:
             if sale.partner_id.company_type == 'company' \
-                    and sale.partner_id.company_id.code == 'FI' \
+                    and sale.partner_id.country_id.code == 'FI' \
                     and not sale.partner_id.business_id:
                 msg = _('Please fill in business ID for the customer %s.') \
                     % sale.partner_id.name
